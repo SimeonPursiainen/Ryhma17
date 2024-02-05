@@ -2,5 +2,5 @@
 Tarvittavat osat projektia varten
 
 Tilattavat:
-  2 x ECG Module (AD8232)
+  2 x ECG Module (AD8232) https://github.com/sparkfun/AD8232_Heart_Rate_Monitor
   1 x 2.2 Inch TFT SPI LCD Display Module 240*320 ILI9341
