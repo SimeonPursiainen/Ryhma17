@@ -1,6 +1,23 @@
 
 Tarvittavat osat projektia varten
 
-Tilattavat:
-  2 x ECG Module (AD8232) https://github.com/sparkfun/AD8232_Heart_Rate_Monitor
-  1 x 2.2 Inch TFT SPI LCD Display Module 240*320 ILI9341
+Tilataan
+2 x AD8232 ECG heart monitor module
+2.2" TFT SPI LCD- näyttö
+
+
+Valmiina olevat:
+Arduino Uno
+UNO R3 shield FR-4
+Leipälauta
+Vastukset 
+  5 x 2,2 k ohm 
+  5 x 3,3 k ohm
+  2 x 10  k ohm
+  1 mikrofaradi kondensaattori
+Johtoa
+
+
+
+Ohje        dokumentti 
+https://www.instructables.com/Mind-Control-3-EEG-Monitor/              
