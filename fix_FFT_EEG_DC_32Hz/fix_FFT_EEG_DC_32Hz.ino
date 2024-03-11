@@ -234,3 +234,6 @@ void drawScreen()
     tft.print("["); tft.print(y); tft.print("]");
   }
 }
+
+
+// muuta parametrit päittäin ILI-kirjastossa.
