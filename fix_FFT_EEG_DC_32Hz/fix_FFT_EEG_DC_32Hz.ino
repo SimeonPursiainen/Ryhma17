@@ -198,7 +198,7 @@ void loop(void)
 void drawScreen()
 {
   // ----- configure screen and text
-  tft.setRotation(3);                                       // landscape
+  tft.setRotation(0);                                       // landscape
   tft.fillScreen(ILI9341_BLACK);                            // black background
   tft.setTextColor(ILI9341_WHITE);                          // white text
 
