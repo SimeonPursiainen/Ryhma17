@@ -49,7 +49,7 @@ Adafruit_ILI9341 tft = Adafruit_ILI9341(TFT_CS, TFT_DC, TFT_RST);
 #define adc_input A0
 
 // ----- FFT
-const unsigned long sample_freq = 64;                       // Hz (Nyquist freq = 32Hz)
+const unsigned long sample_freq = 32;                       // Hz (Nyquist freq = 32Hz)
 const short n = 64;                                         // number of data points (must be power of 2)
 const unsigned long sample_period = 1000000 / sample_freq;  // uS
 const short m = (short(log10(n) / log10(2)));               // equivalent to m=log2(n) from which 2^m=n
@@ -149,7 +149,7 @@ void loop(void)
 
         // ----- display 4 bins (your choice) on TFT screen
         /* TFT screen origin is top-left which means we need to subtract +ve data for waveforms to go upwards */
-        tft.drawLine(x, lastData[0] + 60, x + 4, -data[0] + 60, ILI9341_WHITE);        // position trace 60 pixels below top
+        tft.drawLine(x, lastData[0] + 60, x + 4, -data[0] + 60, ILI9341_GREEN );        // position trace 60 pixels below top
         lastData[0] = -data[0];
 
         tft.drawLine(x, lastData[1] + 100, x + 4, -data[1] + 100, ILI9341_YELLOW);     // position trace 100 pixels below top
@@ -199,8 +199,8 @@ void drawScreen()
 {
   // ----- configure screen and text
   tft.setRotation(0);                                       // landscape
-  tft.fillScreen(ILI9341_BLACK);                            // black background
-  tft.setTextColor(ILI9341_WHITE);                          // white text
+  tft.fillScreen(ILI9341_WHITE);                            // black background // for some reason BLACK = WHITE
+  tft.setTextColor(ILI9341_BLACK);                          // white text
 
   // ----- display title
   tft.setTextSize(2);
