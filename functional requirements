@@ -9,7 +9,8 @@ Muita aaltoja:
   Theeta-aallot 4-8 Hz
   Matala-Gamma 30-70 Hz
   Korkea Gamma 70-150 Hz
-  
+
+  The AD8232 uses an Instrument amp to basically look at the difference between the RA and LA signals. 
   
 https://mielenihmeet.fi/aivoaallot-delta-theta-alfa-ja-gamma/
 
